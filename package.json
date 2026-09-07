@@ -1,0 +1,35 @@
+{
+  "name": "ricdom-lz",
+  "version": "1.0.0",
+  "description": "LZSS self-decompressing bundler, carved out from RicDOM v1's LZ tool (MIT)",
+  "license": "MIT",
+  "author": "miyoshi-tec",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miyoshi-tec/ricdom-lz.git"
+  },
+  "keywords": [
+    "lzss",
+    "compression",
+    "self-decompressing",
+    "bundler",
+    "csp"
+  ],
+  "main": "lz.js",
+  "type": "commonjs",
+  "bin": {
+    "ricdom-lz": "./bin/ricdom-lz.js"
+  },
+  "files": [
+    "lz.js",
+    "bin/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

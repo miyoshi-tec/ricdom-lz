@@ -1,0 +1,6 @@
+# tests/fixtures/*.js は LZSS build artifact (テンプレートリテラル内に意味のある raw LF
+# バイトを含む) をそのまま保存している。Windows の core.autocrlf=true 環境で checkout
+# すると、意味を持つ raw LF が CRLF に書き換えられて fixture が壊れる
+# (実際に切り出し作業中、v1 リポジトリの docs/*.min.js で踏んだ)。
+# -text で改行変換の対象から完全に外す。
+tests/fixtures/*.js -text
